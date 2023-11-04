@@ -1,0 +1,78 @@
+/* Place this in your calculator.css file */
+
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the calculator */
+.calculator-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f8e3e7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Display the username */
+.username-display {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Style for input fields */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #eaeaea;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Style for result display */
+.result-display {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eaeaea;
+    border: 2px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Styling for the operation buttons */
+button {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff6b95;
+}
+
+/* Error message styling */
+.error {
+    color: #ff3860;
+    font-size: 0.9em;
+    height: 1.2em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

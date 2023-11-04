@@ -1,0 +1,65 @@
+body {
+    background-color: cornsilk;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    text-align: center;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #f8e3e7; /* Use a subtle pinkish background */
+    width: 600px; /* Center the content and limit its width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+h1 {
+    font-size: 24px;
+    color:black; 
+    margin-bottom: 20px; /* Increase the margin for separation */
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black; /* A matching color for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px; /* Increase the margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginButton:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+    width: 100%;
+}
+
+#loginButton {
+    background-color:black;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+

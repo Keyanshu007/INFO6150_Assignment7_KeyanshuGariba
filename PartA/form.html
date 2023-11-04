@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Assignment-7(PartA)</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Form</h1>
+        <form id="myForm">
+            <label for="emailId">Email*:</label>
+            <input type="text" name="emailId" id="emailId" placeholder="yourname@northeastern.edu" required>
+            <br>
+
+            <div id="error_emailId" style="display: none; color:red;">
+                Invalid email address, Please enter valid email in user@northeastern.edu
+                <br><br>
+            </div>
+
+            <label for="Name">Name*:</label>
+            <input type="text" name="Name" id="Name" placeholder="Name" required>
+            <br>
+
+            <div id="error_Name" style="display: none; color:red;">
+                Invalid name, Please enter a valid name.
+                <br><br>
+            </div>
+
+            <label for="password">Password*:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <br>
+
+            <div id="error_password" style="display: none; color: red;">
+                Invalid password, Please enter a valid password
+                <br><br>
+            </div>
+
+            <label for="confirmPassword">Confirm Password*:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-Enter Password" required>
+            <br>
+
+            <div id="error_confirmPassword" style="display: none; color: red;">
+                The Password doesn't match please re-enter
+                <br><br>
+            </div>
+            
+
+            <input type="button" value="Login" id="loginButton" disabled>
+
+        </form>
+    </div>
+   
+   <script src="form.js"></script>
+</body>
+</html>

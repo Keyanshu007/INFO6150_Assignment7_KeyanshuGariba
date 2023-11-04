@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <!-- Link the external stylesheet for styling -->
+    <link rel="stylesheet" href="calculator.css">
+    <!-- Include the jQuery library for DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="calculator-container">
+    <h2>Welcome, <span id="name-display"></span></h2>
+    <!-- Container for displaying the user's name -->
+    <div class="form-group">
+        <label for="number1">Number 1:</label>
+        <!-- Label for the first input field -->
+        <input type="text" id="number1">
+        <!-- The first input field for number 1 -->
+        <div class="error" id="error-number1"></div>
+        <!-- Container for displaying errors related to number 1 -->
+    </div>
+    
+    <div class="form-group">
+        <label for "number2">Number 2:</label>
+        <!-- Label for the second input field -->
+        <input type="text" id="number2">
+        <!-- The second input field for number 2 -->
+        <div class="error" id="error-number2"></div>
+        <!-- Container for displaying errors related to number 2 -->
+    </div>
+    
+    <div class="operation-buttons">
+        <!-- Container for operation buttons -->
+        <button class="operation-button" data-operation="add">Add</button>
+        <!-- Button for addition operation -->
+        <button class="operation-button" data-operation="subtract">Subtract</button>
+        <!-- Button for subtraction operation -->
+        <button class="operation-button" data-operation="multiply">Multiply</button>
+        <!-- Button for multiplication operation -->
+        <button class="operation-button" data-operation="divide">Divide</button>
+        <!-- Button for division operation -->
+    </div>
+
+    <div class="result">
+        <!-- Container for displaying the result -->
+        <label for="result">Result:</label>
+        <!-- Label for the result input field -->
+        <input type="text" id="result" readonly>
+        <!-- The result input field (read-only) -->
+    </div>
+</div>
+
+<!-- Include the JavaScript file for calculator functionality -->
+<script src="calculator.js"></script>
+</body>
+</html>
