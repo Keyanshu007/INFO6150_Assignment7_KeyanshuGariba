@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Async/Await</title>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <link rel="stylesheet" href="stopwatch.css">
+    <!-- Link to an external CSS stylesheet for styling the page -->
+</head>
+<body>
+    <div class="stopwatch-container">
+        <!-- Container for the stopwatch interface -->
+        <label id="Timer">00:00:00</label>
+        <!-- Label for displaying the elapsed time -->
+        <input type="date" id="date-menu" />
+        <!-- Input field for selecting a date -->
+        <button id="start">Start</button>
+        <!-- Button to start the stopwatch -->
+        <button id="stop">Stop</button>
+        <!-- Button to stop the stopwatch -->
+        <button id="reset">Reset</button>
+        <!-- Button to reset the stopwatch -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include the jQuery library for DOM manipulation -->
+    <script src="stopwatch.js"></script>
+    <!-- Include an external JavaScript file for stopwatch functionality -->
+</body>
+</html>
+
